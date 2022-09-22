@@ -32,7 +32,7 @@ export default function Footer(props) {
     // eslint-disable-next-line react/jsx-props-no-spreading
     <FooterWrapper {...props}>
       <a href="https://www.youtube.com/channel/UCBJvMQ2sSW2XfZqDx5XI4Og">
-        <img src="https://yt3.ggpht.com/ytc/AMLnZu8c1DnnB5-Y_Fd1b-es8mNhxCNnrtV490GjkpHI9Q=s68-c-k-c0x00ffffff-no-rj" alt="Logo Dante" />
+        <img src="/images/Dantelogo.png" alt="Logo Dante" />
       </a>
       <p>
         Clique no logo para conhecer o meu canal!
