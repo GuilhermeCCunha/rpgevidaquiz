@@ -1,10 +1,10 @@
 {
-    "bg": "https://i.pinimg.com/originals/64/92/77/6492778872455eee10cbb314fc36863f.jpg",
+    "bg": "https://rpgevidaquiz.vercel.app/images/Imagemrpgevida.jpg",
     "title": "Quiz RPG é vida #rpgévida",
     "description": "Um quiz sobre os RPGs",
     "questions": [
       {  
-        "image": "https://media4.giphy.com/media/cJBb3sLQedEheNfV5v/giphy.gif?cid=ecf05e47nlsyyojj7if4uxxoy3rtnc05w2if5w4fv5z637zm&rid=giphy.gif&ct=g",
+        "image": "https://rpgevidaquiz.vercel.app/images/FFVIII.gif",
         "title": "Qual foi o ano de lançamento de Final Fantasy VIII no Japão?",
         "description": "Faz tempo",
         "answer": 2,
@@ -17,7 +17,7 @@
       },   
   
       {  
-        "image": "https://media2.giphy.com/media/PkCDv7CIK8d2M/giphy.gif?cid=ecf05e47wgt8w5i1kzhzfoxrsmtgk66a2eomvuklsfktc1yv&rid=giphy.gif&ct=g",
+        "image": "https://rpgevidaquiz.vercel.app/images/ChronoT.gif",
         "title": "Em que época Lavos veio à terra no Chrono Trigger?",
         "description": "???",
         "answer": 3,
@@ -30,7 +30,7 @@
       },
   
      {  
-        "image": "https://media0.giphy.com/media/amrNGnZUeWhZC/giphy.gif?cid=ecf05e47yjei6b3vrcnjcft7115gtmso6otp4jp4uy3qdrm4&rid=giphy.gif&ct=g",
+        "image": "https://rpgevidaquiz.vercel.app/images/PKMN.gif",
         "title": "Qual desses Pokémon não faz parte da primeira geração?",
         "description": "???",
         "answer": 0,
@@ -43,7 +43,7 @@
       },
   
       {  
-        "image": "https://thumbs.gfycat.com/DependableNaturalClownanemonefish-size_restricted.gif",
+        "image": "https://rpgevidaquiz.vercel.app/images/DQXI.gif",
         "title": "Em Dragon Quest XI qual é o nome da irmã do Erik?",
         "description": "???",
         "answer": 0,
@@ -56,7 +56,7 @@
       },
   
       {  
-        "image": "https://thumbs.gfycat.com/AmpleTornArabianhorse.webp",
+        "image": "https://rpgevidaquiz.vercel.app/images/Zelda.webp",
         "title": "Quantas Gold Skulltulas existem em The Legend of Zelda: Ocarina of Time?",
         "description": "???",
         "answer": 1,
@@ -69,7 +69,7 @@
       },
   
       {  
-        "image": "https://media3.giphy.com/media/ifY0hb1CdTksR6jh5m/giphy.gif?cid=ecf05e47mgrt65tpaddaqvvdfplowonk2d2j90yqo3088691&rid=giphy.gif&ct=g",
+        "image": "https://rpgevidaquiz.vercel.app/images/FFVII.gif",
         "title": "No Final Fantasy VII qual é o nome do bar da Tifa?",
         "description": "???",
         "answer": 2,
@@ -82,7 +82,7 @@
       },
   
       {  
-        "image": "https://thumbs.gfycat.com/MajorWildChuckwalla.webp",
+        "image": "https://rpgevidaquiz.vercel.app/images/ChronoC.webp",
         "title": "Em que lugar que o Serge de Chrono Cross mora?",
         "description": "???",
         "answer": 3,
@@ -95,7 +95,7 @@
       },
   
       {  
-        "image": "https://media2.giphy.com/media/fVhSrzDtXV9ARN9wD4/200w.webp?cid=ecf05e47hx8pw5wxkyt10rxsbgxp74813g4o6ek1yj2shdib&rid=200w.webp&ct=g",
+        "image": "https://rpgevidaquiz.vercel.app/images/FFX.webp",
         "title": "Em Final Fantasy X qual é o esporte favorito de Tidus?",
         "description": "???",
         "answer": 2,
@@ -108,7 +108,7 @@
       },
    
       {  
-        "image": "https://thumbs.gfycat.com/BlaringPassionateCats-size_restricted.gif",
+        "image": "https://rpgevidaquiz.vercel.app/images/Castle.gif",
         "title": "Quem é o personagem principal do jogo Castlevania Symphony of the Night?",
         "description": "???",
         "answer": 0,
@@ -121,7 +121,7 @@
       },
   
       {  
-        "image": "https://thumbs.gfycat.com/AcidicEvenHedgehog.webp",
+        "image": "https://rpgevidaquiz.vercel.app/images/FFIX.webp",
         "title": "Qual é o nome do Mago Negro de Final Fantasy IX?",
         "description": "Essa é bem fácil!",
         "answer": 0,
