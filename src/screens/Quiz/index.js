@@ -1,10 +1,16 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable max-len */
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable object-curly-newline */
 /* eslint-disable eol-last */
 /* eslint-disable react/jsx-no-bind */
 /* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
+
 import React from 'react';
 import { Lottie } from '@crello/react-lottie';
+import { useRouter } from 'next/router';
+
 // import db from '../../../db.json';
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
@@ -16,7 +22,8 @@ import BackLinkArrow from '../../components/BackLinkArrow';
 
 import loadingAnimation from './animations/loading.json';
 
-function ResultWidget({ results }) {
+function ResultWidget({ results, totalQuestions }) {
+  const { query } = useRouter();
   return (
     <Widget>
       <Widget.Header>
@@ -38,6 +45,27 @@ function ResultWidget({ results }) {
           {' '}
           perguntas
         </p>
+        <p> Seu percentual de acertos é de {' '}
+          { Math.round((results.filter((x) => x).length / totalQuestions) * 100)}%
+        </p>
+        <p>
+          { Math.round((results.filter((x) => x).length / totalQuestions) * 100) >= 100 && <h1>É isso aí! Você é excelente! {query.name}</h1>}
+        </p>
+        <p>
+          { Math.round((results.filter((x) => x).length / totalQuestions) * 100) >= 100 && query.name === 'Dante' && <h1>Assim é fácil, você é o dono do canal</h1>}
+        </p>
+        <p>
+          { Math.round((results.filter((x) => x).length / totalQuestions) * 100) >= 100 && query.name === 'Créditos' && <h1>Criado por Guilherme Cunha <br /> <br /> <a href="https://github.com/GuilhermeCCunha/rpgevidaquiz" target="_blank" rel="noreferrer"> <img src="/GitHubLogo.png" alt="Logo GitHub" width="135" height="125" /> </a></h1>}
+        </p>
+        <p>
+          { Math.round((results.filter((x) => x).length / totalQuestions) * 100) < 100 && Math.round((results.filter((x) => x).length / totalQuestions) * 100) >= 70 && <h1>Falta pouco para você ser excelente, se você gosta de perfeição pode tentar novamente {query.name}</h1>}
+        </p>
+        <p>
+          { Math.round((results.filter((x) => x).length / totalQuestions) * 100) < 70 && Math.round((results.filter((x) => x).length / totalQuestions) * 100) > 20 && <h1>Você poderá sempre melhorar {query.name}</h1>}
+        </p>
+        <p>
+          { Math.round((results.filter((x) => x).length / totalQuestions) * 100) <= 20 && <h1>Você não foi bem, mas poderá sempre jogar novamente {query.name}</h1>}
+        </p>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
@@ -46,8 +74,8 @@ function ResultWidget({ results }) {
               {' '}
               Resultado:
               {result === true
-                ? 'Acertou'
-                : 'Errou'}
+                ? ' Acertou ✅'
+                : ' Errou ❌'}
             </li>
           ))}
         </ul>
@@ -218,7 +246,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
 
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
-        {screenState === screenStates.RESULT && <ResultWidget results={results} />}
+        {screenState === screenStates.RESULT && <ResultWidget results={results} totalQuestions={totalQuestions} />}
       </QuizContainer>
     </QuizBackground>
   );
