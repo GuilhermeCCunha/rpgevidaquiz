@@ -45,6 +45,12 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0;
   }
+  a {
+    &:hover {
+      transition: .3s;
+      opacity: .5;
+  }
+}
 `;
 
 Widget.Topic = styled.a`
